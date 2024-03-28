@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var sources = {};
     var currentAudioId = null;
 
-    // Function to create AudioContext
+ 
     function createAudioContext() {
         audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         analyser = audioCtx.createAnalyser();
