@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var audioSrc;
         switch (elementId) {
             case "pc1":
-                audioSrc = "audios/NEFFEX__Desperate_mastered.mp3";
+                audioSrc = "audios/Vocal.mp3";
                 break;
             case "pc2":
                 audioSrc = "audios/Drums.mp3";
