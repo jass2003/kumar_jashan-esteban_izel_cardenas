@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
         analyser.connect(audioCtx.destination);
     }
 
+
+    function stopDiskRotation() {
+        disk.classList.remove("rotate");
+    }
+   
+
     // Function to play or synchronize audio
     function playOrSyncAudio(elementId) {
         var audioSrc;
@@ -136,6 +142,8 @@ document.addEventListener("DOMContentLoaded", function() {
         Object.values(sources).forEach(function(source) {
             source.audio.pause();
         });
+
+        stopDiskRotation();
     });
 
     // Dial rotation event listener
