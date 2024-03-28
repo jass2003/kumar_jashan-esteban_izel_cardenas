@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var disk = document.getElementById("disk"); // Get the rotating disk element
 
     // Create AudioContext and related objects
-    var audioCtx = new (window.AudioContext || window.AudioContext)();
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     var analyser = audioCtx.createAnalyser();
     var sources = {}; // Object to store audio sources
     var currentAudioId = null; // ID of the currently playing audio source
@@ -222,3 +222,12 @@ document.addEventListener("DOMContentLoaded", function() {
         return angle;
     }
 });
+
+
+function initializeAudioContext() {
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    // Rest of your audio-related code here
+}
+
+var playButton = document.getElementById("playButton");
+playButton.addEventListener("click", initializeAudioContext);
