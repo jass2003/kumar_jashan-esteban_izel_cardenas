@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link rel="icon" href="data:,">
+
+  <title>3D Rectangle Box</title>
+ 
+  <link rel="stylesheet" href="css/main.css">
+  
+
+  
+</head>
+
+
+
+<body>
+
+
+
+ <!-- Mobile VERSION -->
+
+ <div class="mobile-container">
+  <h1 class="hidden">DJ Audio Viewer</h1>
+
+
+<section class="grid-con">
+    <h2 class="hidden">mobile html</h2>
+
+  <div class="glass-mobile col-start-1 col-end-5"><img src="images/glass-mobile.png" alt="glass-mobile"></div>
+  <div class="button1 col-start-1 col-end-2"><img src="images/pc1.png" alt="pc1"></div>
+  <div class="button2 col-start-2 col-end-3"><img src="images/pc2.png" alt="pc1"></div>
+  <div class="button3 col-start-3 col-end-4"><img src="images/pc3.png" alt="pc1"></div>
+  <div class="button4 col-start-4 col-end-5"><img src="images/pc4.png" alt="pc1"></div>
+
+
+<div class="disk-main col-start-1 col-end-5"> 
+  <img src="images/disk-under.png" alt="disk-under" class="disk-under">
+  <img src="images/disk-mobile.png" alt="disk" class="disk">
+</div>
+
+<div class="playButton col-start-1 col-end-2"><img src="images/button-mobile.png" alt="playButton"></div>
+<div class="volume-button col-end-4 col-end-5"><img src="images/mobile-music-mixer.png" alt="volume-button"></div>
+
+<div class="volumeControl col-start-1 col-end-5"><img src="images/volume-mobile.png" alt="volume-control"></div>
+<div class="volume-control-button1 col-start-1 col-end-2"> <img src="images/volumecontrol-button-mobile.png"  alt="volume-control-button1"></div>
+<div class="volume-control-button2 col-start-2 col-end3">  <img src="images/volumecontrol-button-mobile.png" alt="volume-control-button2"></div>
+<div class="volume-control-button3 col-start-3 col-end-4"> <img src="images/volumecontrol-button-mobile.png" alt="volume-control-button3"></div>
+<div class="volume-control-button4 col-start-4 col-end-5"><img src="images/volumecontrol-button-mobile.png" alt="volume-control-button4"></div>
+
+
+<div class="drop-zone col-start-1 col-end-2"><img src="images/drop-zone-mobile.png" alt="drop-zone"></div>
+<div class="drop-zone col-start-2 col-end-3"><img src="images/drop-zone-mobile.png" alt="drop-zone"></div>
+<div class="drop-zone col-start-3 col-end-4"><img src="images/drop-zone-mobile.png" alt="drop-zone"></div>
+<div class="drop-zone col-start-4 col-end-5"><img src="images/drop-zone-mobile.png" alt="drop-zone"></div>
+
+
+
+
+</section>
+</div>
+
+
+
+
+<!-- DESKTOP VERSION -->
+
+  <div class="container">
+    <div class="rectangle-box" id="box">
+
+
+
+      <!-- VISUALISER -->
+      <canvas id="audioVisualizer" class="visualizer" width="340" height="80" >
+      </canvas>
+
+      <!-- AUDIO  -->
+
+      <audio id="audioEl" src="audios/Vocals.mp3" data-trackref="Vocals">
+
+      </audio>
+<!--  ANIMATION -->
+
+      
+
+<!-- DROP ELEMENTS -->
+
+
+      <img id="pc1" src="images/pc1.png" alt="draggable" class="drops" data-audio="audios/audio1.mp3">
+
+      <img id="pc2" src="images/pc2.png" class="drops" alt="draggable">
+
+      <img id="pc3" src="images/pc3.png" class="drops" alt="draggable">
+      <img id="pc4" src="images/pc4.png" class="drops" alt="draggable">
+
+
+
+
+
+      <!-- perticular volume changer -->
+
+       <img class="volume-slider" id="vs1" src="images/t-dial-1.svg" alt="volume-slider1">
+
+       <img  class="volume-slider"  id="vs2" src="images/t-dial-1.svg" alt="volume-slider2">
+ 
+       <img  class="volume-slider"  id="vs3" src="images/t-dial-1.svg" alt="volume-slider3">
+       
+       <img  class="volume-slider"  id="vs4" src="images/t-dial-1.svg" alt="volume-slider4">
+       
+
+
+<!-- MASTER VOLUME CONTROL -->
+
+<img id="dial" src="images/audio-dial.svg" alt="master-volume">
+
+
+
+<!-- POWER SVG -->
+
+<img id="power" src="images/power.svg" alt="draggable">
+
+
+<!-- ROATATING DISK -->
+
+<img id="disk" src="images/disk1.png" alt="rotating disk">
+
+
+
+
+<!-- DROP ZONES -->
+
+
+<div id="dz1" class="dropzone" data-zone="fst" > </div>
+<div id="dz2" class="dropzone" data-zone="scd" ></div>
+<div id="dz3" class="dropzone" data-zone="thd"></div>
+<div id="dz4" class="dropzone" data-zone="fth" ></div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="js/3d.js"></script>
+ 
+
+  
+  <script src="js/audio.js"></script>
+
+  <script src="js/rotate.js"></script>
+
+
+
+
+</body>
+</html>
+
+

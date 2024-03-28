@@ -1,0 +1,653 @@
+
+  body {
+    background-image: url(../images/back.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.mobile-container{
+position: relative;
+
+}
+
+
+
+
+/* ---Mobile Library Grid Styles--- */
+
+.full-width-grid-con {
+
+display: grid;
+grid-template-columns: 1fr minmax(0, 1200px) 1fr;  
+}
+
+.grid-con {
+background-image: url(../images/background-mobile-final.png); 
+background-size: contain;
+background-repeat: no-repeat; 
+position: relative;
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+grid-column-gap: 30px;
+max-width: 480px;
+min-width: 480px;
+margin:10px;
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 20px;
+}
+
+
+.col-span-1 {grid-column: span 1 / span 1;}
+.col-span-2 {grid-column: span 2 / span 2;}
+.col-span-3 {grid-column: span 3 / span 3;}
+.col-span-4 {grid-column: span 4 / span 4;}
+.col-span-full {grid-column: 1 / -1;}
+
+.col-start-1   {grid-column-start: 1;}
+.col-start-2   {grid-column-start: 2;}
+.col-start-3   {grid-column-start: 3;}
+.col-start-4   {grid-column-start: 4;}
+
+.col-end-1  {grid-column-end: 1;}
+.col-end-2  {grid-column-end: 2;}
+.col-end-3  {grid-column-end: 3;}
+.col-end-4  {grid-column-end: 4;}
+.col-end-5  {grid-column-end: 5;}
+/*  */
+
+
+
+.hidden {
+display: none;
+}
+
+.container{
+display: none;
+
+} 
+
+
+
+img, embed, object, video, picture {
+max-width: 100%;
+}
+
+
+html {
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+
+
+body, p, h1, h2, h3, h4, h5 {
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+background-image: url(../images/back.jpg);
+background-repeat: no-repeat;
+}
+
+.glass-mobile img {
+margin: 20px;
+margin-bottom: 10px;
+width: 400px;
+height: 100px;
+}
+
+
+.button1, .button2, .button3, .button4 img {
+width: 70px;
+height: 70px;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
+.disk {
+width: 240px;
+height: 240px;
+margin-top: -75px;
+margin-left: 90px;
+}
+
+.disk-under {
+margin-top: 30px;
+margin-bottom: -200px;
+width: 300px;
+height: 300px;
+margin-left: 60px;
+}
+
+.volumeControl {
+width: 200px;
+height: 200px;
+margin-left: 20px;
+margin-top: 20px;
+}
+
+.drop-zone {
+margin-bottom: 20px;
+}
+
+.volume-control-button1 {
+width: 60px;
+height: 60px;
+margin-top: -100px;
+margin-left: 50px;
+}
+
+.volume-control-button2 {
+width: 60px;
+height: 60px;
+margin-top: -100px;
+margin-left: 25px;
+}
+
+.volume-control-button3 {
+width: 60px;
+height: 60px;
+margin-top: -100px;
+}
+
+.volume-control-button4 {
+width: 60px;
+height: 60px;
+margin-top: -100px;
+margin-left: -30px;
+}
+
+
+/*  */
+
+
+
+
+
+/*  */
+
+/* tablet AND ALL SIZES*/
+@media screen and (min-width: 708px) {
+
+.mobile-container{
+  display: none;
+}
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    
+    .rectangle-box {
+      width: 900px; 
+      height: 550px;
+
+      background: linear-gradient(45deg, #eaeaea, #d3d3d3); 
+      border: 2px solid #999;
+      border-radius: 45px;
+      padding: 20px;
+      box-shadow: 
+        -5px -5px 10px rgba(255, 255, 255, 0.5), 
+        5px 5px 10px rgba(0, 0, 0, 0.5), 
+        inset -5px -5px 10px rgba(255, 255, 255, 0.5), 
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5); 
+      transition: transform 0.3s ease; 
+
+      position: relative;
+    }
+    
+    .rectangle-box p {
+      margin: 0; 
+    }
+    
+
+    #box {
+      background-image: url(../images/background-t.png);
+      background-size: cover;
+    }
+    
+
+
+
+/* audio-visualizer */
+
+
+#audioVisualizer {
+  position: absolute;
+  z-index: 4;
+  top: 47px;
+  left: 75px;
+  width: 303px;
+  height: 97px;
+ 
+} 
+
+
+.visualizer {
+  background-color: transparent;
+}
+
+
+      /* SVG POSITIONING*/
+
+
+
+    #pc1{
+      top: 444px;
+      left: 80px;
+      width: 63px;
+      height: 63px;
+      position: absolute;
+      /* position: ; */
+      z-index: 2;
+
+    }
+    #pc2{
+      top: 444px;
+      left: 155px;
+      width: 63px;
+      height: 63px;
+      position: absolute;
+      z-index: 2;
+    }
+    #pc3{
+      top: 444px;
+      left: 228px;
+      width: 63px;
+      height: 63px;
+      position: absolute;
+      z-index: 2;
+    }
+    #pc4{
+      top: 444px;
+      left: 302px;
+      width: 63px;
+      height: 63px;
+      position: absolute;
+      z-index: 2;
+
+    }
+
+
+
+    #power{
+      position: absolute;
+      /* width: 80px;
+      height: 80px; */
+      z-index: 2;
+      top: 56px;
+      left: 570px;
+
+    }
+
+
+    /* VOLUME CONTROL */
+    .volume-slider{
+      position: absolute;
+      
+    }
+
+
+    #vs1{
+      top: 340px;
+      left: 77px;
+    }
+
+    #vs2{
+      top: 340px;
+      left: 130px;
+    }
+
+    #vs3{
+      top: 340px;
+      left: 182PX;
+    }
+
+    #vs4{
+      top: 340px;
+      left: 235px;
+    }
+
+
+
+#dial {
+
+  /* user-drag: none; */
+  -webkit-user-drag: none;
+}
+
+
+
+/* positioning */
+#dial{
+  position: absolute;
+  cursor: ns-resize;
+  z-index: 2;
+  top: 58px;
+  left: 480px;
+
+}
+
+   
+
+
+/* DROPZONES */
+
+.dropzone{
+  position: relative;
+  width: 105px;
+  height: 105px ;
+  background-image: url(../images/dropzone-t.png);
+ 
+}
+
+#dz1{
+  margin-left: 698px;
+  margin-top: 30px;
+
+}
+
+#dz2{
+  margin-left: 698px;
+  margin-top: 19px;
+
+}
+
+#dz3{
+  margin-left: 698px;
+  margin-top: 21px;
+ 
+}
+
+#dz4{
+  margin-left: 698px;
+  margin-top: 20px;
+
+}
+
+
+/* ROTATING DISK */
+
+#disk{
+  position: absolute;
+  top: 176px;
+  left: 400px;
+  width: 234px ;
+
+}
+
+
+
+
+.rotate {
+  animation: rotate 4s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+  }
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* DESKTOP AND ALL SIZES*/
+@media screen and (min-width: 1200px) {
+
+  .mobile-container{
+    display: none;
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .rectangle-box {
+    width: 1016px; 
+    height: 620px; 
+
+    background: linear-gradient(45deg, #eaeaea, #d3d3d3); 
+    border: 2px solid #999; 
+    border-radius: 45px;
+    padding: 20px; 
+    box-shadow: 
+      -5px -5px 10px rgba(255, 255, 255, 0.5), 
+      5px 5px 10px rgba(0, 0, 0, 0.5), 
+      inset -5px -5px 10px rgba(255, 255, 255, 0.5), 
+      inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease; 
+
+    position: relative;
+  }
+  
+  .rectangle-box p {
+    margin: 0; 
+  }
+  
+
+  #box {
+    background-image: url(../images/background3.0.png);
+    background-size: cover;
+  }
+  
+
+
+
+/* audio-visualizer */
+
+
+#audioVisualizer {
+position: absolute;
+z-index: 4;
+top: 56px;
+left: 92px ;
+width: 337px;
+height: 110px;
+
+} 
+
+
+.visualizer {
+background-color: transparent;
+}
+
+
+    /* SVG POSITIONING*/
+
+
+ 
+
+  #pc1{
+    top: 500px;
+    left: 85px;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    /* position: ; */
+    z-index: 2;
+
+  }
+  #pc2{
+    top: 500px;
+    left: 171px;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    z-index: 2;
+  }
+  #pc3{
+    top: 500px;
+    left: 255px;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    z-index: 2;
+  }
+  #pc4{
+    top: 500px;
+    left: 342px;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    z-index: 2;
+
+  }
+
+
+
+  #power{
+    position: absolute;
+
+    z-index: 2;
+    top: 65px;
+    left: 647px;
+
+  }
+
+
+  /* VOLUME CONTROL */
+  .volume-slider{
+    position: absolute;
+    
+  }
+
+
+  #vs1{
+    top: 380px;
+    left: 91px;
+  }
+
+  #vs2{
+    top: 380px;
+    left: 151px;
+  }
+
+  #vs3{
+    top: 380px;
+    left: 208PX;
+  }
+
+  #vs4{
+    top: 380px;
+    left: 270px;
+  }
+
+
+/* master volume */
+
+/* prevents drag */
+#dial {
+
+
+-webkit-user-drag: none; /* For Safari */
+}
+
+
+
+/* positioning */
+#dial{
+position: absolute;
+cursor: ns-resize;
+z-index: 2;
+top: 68px;
+left: 547px;
+
+}
+
+ 
+
+
+/* DROPZONES */
+
+.dropzone{
+position: relative;
+width: 112px;
+height: 112px ;
+background-image: url(../images/dropzone.png);
+
+}
+
+#dz1{
+margin-left: 800px;
+margin-top: 45px;
+
+}
+
+#dz2{
+margin-left: 799px;
+margin-top: 19px;
+
+}
+
+#dz3{
+margin-left: 800px;
+margin-top: 21px;
+
+}
+
+#dz4{
+margin-left: 800px;
+margin-top: 20px;
+
+}
+
+
+/* ROTATING DISK */
+
+#disk{
+position: absolute;
+width:270px ;
+top: 197px;
+left: 450px;
+
+
+}
+
+
+
+
+.rotate {
+animation: rotate 4s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes rotate {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+}
+
+
+
+
+
+
+
+
+
